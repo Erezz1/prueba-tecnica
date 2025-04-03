@@ -1,6 +1,6 @@
 import { useState, useRef, useContext } from "react";
 
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext";
 import { Product } from "../interfaces/types";
 import { DATA_SET_VALUE } from "../constants";
 

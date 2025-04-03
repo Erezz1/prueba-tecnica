@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 
 import { Search } from "./Search";
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext";
 
 import searchIcon from "../assets/search-icon.png";
 

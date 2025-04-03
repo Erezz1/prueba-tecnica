@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { CartContext } from "./cartContext"
+import { CartContext } from "./CartContext"
 import { Product } from "../interfaces/types";
 
 interface Props {

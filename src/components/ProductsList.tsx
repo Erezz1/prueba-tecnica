@@ -3,7 +3,7 @@ import { ClockLoader } from "react-spinners";
 
 import { ProductCard } from "./ProductCard";
 import { getProducts } from "../services/getProducts";
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext";
 import { Product } from "../interfaces/types";
 import { DATA_SET_VALUE } from "../constants";
 

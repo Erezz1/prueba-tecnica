@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-import { CartContext } from "../context/cartContext";
+import { CartContext } from "../context/CartContext";
 
 interface Props {
   isOpen: boolean;
