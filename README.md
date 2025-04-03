@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+# 📘 Documentación para correr la aplicación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto usa **React**, **Vite**, **TypeScript** y **TailwindCSS**. Además, el gestor de paquetes utilizado es **pnpm**.
 
-Currently, two official plugins are available:
+## ✅ Requisitos previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Asegúrate de tener instalado:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (v16 o superior recomendado)
+- [pnpm](https://pnpm.io/) (v8 o superior recomendado)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Puedes verificar las versiones ejecutando:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+node -v
+pnpm -v
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Instalación de dependencias
+Para instalar las dependencias del proyecto, ejecuta:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+pnpm install
 ```
+
+## ▶️ Ejecución en modo desarrollo
+Para iniciar el servidor de desarrollo, usa:
+
+```bash
+pnpm dev
+```
+
+Esto abrirá la aplicación en [http://localhost:5173](http://localhost:5173).
+
+## 🎨 Configuración de TailwindCSS
+TailwindCSS ya está configurado en el proyecto. Asegúrate de que los estilos estén correctamente importados en ```src/app.css```:
+
+```bash
+@import "tailwindcss";
+```
+
+## 🛠️ Otros comandos útiles
+- ```pnpm build```: Compila la aplicación para producción.
+- ```pnpm preview```: Previsualiza la aplicación compilada.
